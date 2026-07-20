@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,8 +13,28 @@
 </head>
 
 <body>
+
+    <div id="login-container" class="container">
+
+    <h1>❤️ Welcome Love ❤️</h1>
+
+    <p>
+        This little corner of the internet is just for you :D
+    </p>
+
+    <input id="email" type="email" placeholder="Email po">
+
+    <input id="password" type="password" placeholder="Password po">
+
+    <button onclick="login()">
+        Enter ❤️
+    </button>
+
+    <p id="login-error"></p>
+
+</div>
     
-<div class="container">
+<div id="app" class="container hidden">
 
     <img src= "193A4604-B79B-4AE2-9956-065A6DF7FA37.png" alt="Us together" class="photo">
 
@@ -60,7 +81,8 @@
 <div id="player-container" class="hidden">
     <audio id="player" controls></audio>
 </div>    
-<script src="Script.js"></script>
 </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
